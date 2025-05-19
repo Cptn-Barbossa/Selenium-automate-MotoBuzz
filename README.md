@@ -1,39 +1,64 @@
-# Automatizācija ar Selenium priekš Parts Europe, Mike Matthies un MotonetLV
+# 🏍️ MotoBuzz Automātiskā Rezerves Daļu Meklēšana
 
-Šis projekts automatizē preču meklēšanu Parts Europe, Mike Matthies un MotonetLV mājaslapās, izmantojot Selenium.
+Šis projekts automatizē rezerves daļu meklēšanu trīs dažādos interneta veikalos, izmantojot **Selenium WebDriver**:
 
-## Prasības
+- [PartsEurope.eu](https://partseurope.eu/)
+- [Mike Matthies](https://mike.matthies.de/)
+- [MotonetLV.lv](https://motonetlv.lv/)
 
-- Python 3.8 vai jaunāka versija
-- Instalētas bibliotēkas no `requirements.txt`:
-selenium
-python-dotenv
+---
 
-- Edge pārlūks un atbilstošs WebDriver (msedgedriver.exe) pieejamā ceļā
+## 🔧 Lietošana
 
-## Uzstādīšana
+1. Klonē repozitoriju:
 
-1. Izveido failu `.env` projekta saknē un ievieto tajā savus lietotājvārdus un paroles šādā formātā:
+git clone https://github.com/Cptn-Barbossa/Selenium-automate-MotoBuzz.git
 
-MOTOBUZZ_PARTS_USERNAME=tu_epasts@example.com
+cd Selenium-automate-MotoBuzz
 
-MOTOBUZZ_PARTS_PASSWORD=parole
+2. Izveido .env failu šajā direktorijā un ievadi piekļuves datus:
 
-MOTOBUZZ_MATTHIES_USERNAME=lietotajvards
+MOTOBUZZ_PARTS_USERNAME=...
 
-MOTOBUZZ_MATTHIES_PASSWORD=parole
+MOTOBUZZ_PARTS_PASSWORD=...
 
-MOTOBUZZ_MOTONETLV_USERNAME=lietotajvards
+MOTOBUZZ_MATTHIES_USERNAME=...
 
-MOTOBUZZ_MOTONETLV_PASSWORD=parole
+MOTOBUZZ_MATTHIES_PASSWORD=...
 
+MOTOBUZZ_MOTONET_USERNAME=...
 
-2. Instalē nepieciešamās atkarības:
+MOTOBUZZ_MOTONET_PASSWORD=...
+
+3. Instalē nepieciešamās Python bibliotēkas (ieteicams izmantot virtuālo vidi):
 pip install -r requirements.txt
 
-3. Lejupielādē un uzstādi Edge WebDriver, kas atbilst tavai pārlūkprogrammas versijai, un novieto msedgedriver.exe projekta mapē vai norādi ceļu main.py failā.
-
-Lietošana
+4. Palaid programmu:
 python main.py
-Ievadi preces kodu, kad programma to prasīs.
 
+---
+
+✅ Funkcionalitāte:
+
+-Automātiska pieslēgšanās katram piegādātājam
+
+-Preces koda ievade no lietotāja
+
+-Meklēšanas rezultātu attēlošana pārlūkā
+
+-Atbalsts vairākām pārlūka cilnēm
+
+
+---
+
+📁 Fails .gitignore:
+Projekts neiekļauj sensitīvus failus (.env) un sistēmas failus. Aizsardzība tiek nodrošināta ar .gitignore.
+
+---
+
+⚠️ Piezīmes:
+-Nepieciešams Microsoft Edge WebDriver (msedgedriver.exe)
+-Nepieciešama stabila interneta pieslēguma darbība
+-Nav testēts uz citiem pārlūkiem
+
+---
