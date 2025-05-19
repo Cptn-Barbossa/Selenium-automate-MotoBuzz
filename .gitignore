@@ -1,0 +1,22 @@
+# Игнорируем .env с логинами и паролями
+.env
+
+# Кеш Python
+__pycache__/
+*.pyc
+
+# Файлы и папки IDE (например, VSCode, PyCharm)
+.vscode/
+.idea/
+
+# Логи
+*.log
+
+# Драйверы браузера
+msedgedriver.exe
+chromedriver.exe
+geckodriver.exe
+
+# Системные файлы Windows/macOS
+.DS_Store
+Thumbs.db
