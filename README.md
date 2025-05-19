@@ -15,11 +15,17 @@ python-dotenv
 
 1. Izveido failu `.env` projekta saknē un ievieto tajā savus lietotājvārdus un paroles šādā formātā:
 MOTOBUZZ_PARTS_USERNAME=tu_epasts@example.com
+
 MOTOBUZZ_PARTS_PASSWORD=parole
+
 MOTOBUZZ_MATTHIES_USERNAME=lietotajvards
+
 MOTOBUZZ_MATTHIES_PASSWORD=parole
+
 MOTOBUZZ_MOTONETLV_USERNAME=lietotajvards
+
 MOTOBUZZ_MOTONETLV_PASSWORD=parole
+
 
 
 2. Instalē nepieciešamās atkarības:
